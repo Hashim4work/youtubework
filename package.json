@@ -1,0 +1,7 @@
+{
+  "name": "blog",
+  "private": true,
+  "dependencies": {
+    "yarn": "^1.13.0"
+  }
+}

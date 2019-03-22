@@ -1,0 +1,17 @@
+<h1 style= "color: Peru"><%= hello_blog %><br></h1>
+<%= link_to 'New Article', new_article_path, style: "color: yellow" %>
+<table>
+	<tr>
+		<th style= "color: Peru">Title </th>
+		<th style= "color: Peru">Text</th>
+		<th></th>
+	</tr>
+
+	<%@articles.each do|article| %>
+		<tr>
+			<td><%= article.title %></td>
+			<td><%= article.text %></td>
+			<td><%= link_to 'show',article_path(article), style: "color: green;" %></td>
+		</tr>
+	<%end%>
+</table>

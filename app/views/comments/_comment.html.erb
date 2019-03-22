@@ -1,0 +1,11 @@
+	<p>
+		<strong style= "color: Peru"><%= comment.id %></strong><br>
+		<strong style= "color: Peru">Commenter:</strong>
+		<%= comment.commenter %>
+	</p>
+	<p>
+		<strong style= "color: Peru">Comment:</strong>
+		<%= comment.body %>
+	</p>
+	
+	<%= link_to 'Destory Comment', [comment],style: "color: red", method: :delete, data: {confirm: "Are you sure?"} %>

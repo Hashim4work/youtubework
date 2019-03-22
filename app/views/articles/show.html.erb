@@ -1,0 +1,28 @@
+
+<p>
+	<strong style= "color: Peru">Title:</strong>
+	 <%= @article.title %>
+</p>
+
+<p>
+	<strong style= "color: Peru">Text:</strong>
+	<%= @article.text %>
+</p>
+<p></p>
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+	
+
+
+
+
+<h2>Add a new comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Back',  articles_path, style: "color: Peru" %>
+
+<%= link_to 'Edit', edit_article_path, style: "color: Lime" %>
+
+
+<%= link_to 'Destroy', article_path(@article),style: "color: red", method: :delete, data: { confirm: 'Are you sure?' } %>
