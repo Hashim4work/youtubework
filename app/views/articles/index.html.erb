@@ -9,9 +9,9 @@
 
 	<%@articles.each do|article| %>
 		<tr>
-			<td><%= article.title %></td>
+			<td style="padding-right: 10px"><%= article.title %></td>
 			<td><%= article.text %></td>
-			<td><%= link_to 'show',article_path(article), style: "color: green;" %></td>
+			<td style="padding-left: 10px"><%= link_to 'show',article_path(article), style: "color: green;" %></td>
 		</tr>
 	<%end%>
 </table>
